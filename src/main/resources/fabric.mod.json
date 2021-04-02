@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "tread",
+  "version": "1.0.0",
+  "environment": "client",
+  "name": "Tread",
+  "authors": [
+    "Jacobtread"
+  ],
+  "description": "A Minecraft Hacked Client named Tread",
+  "license": [
+    "MIT"
+  ],
+  "mixins": [
+    "tread.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "me.jacobtread.tread.Initializer"
+      }
+    ]
+  },
+  "depends": {
+    "minecraft": "1.16.x",
+    "fabricloader": ">=0.8.7",
+    "fabric-api-base": "*",
+    "fabric-language-kotlin": ">=1.5.0+kotlin.1.4.31"
+  }
+}
